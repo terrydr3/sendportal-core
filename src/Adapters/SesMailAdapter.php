@@ -44,6 +44,7 @@ class SesMailAdapter extends BaseMailAdapter
                     ],
                 ],
                 'ConfigurationSetName' => Arr::get($this->config, 'configuration_set_name'),
+                'ReplyToAddresses' => [$fromEmail]
             ]);
         });
 
